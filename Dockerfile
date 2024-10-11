@@ -11,7 +11,8 @@ RUN apt install -y python3-colcon-common-extensions
 
 WORKDIR /src
 COPY . .
-RUN git clone https://github.com/LikhithST/ros_tutorials.git --branch humble
+
+RUN git clone https://github.com/ZIdeas/ros2turtlesim.git --branch humble
 RUN . /opt/ros/humble/setup.sh; colcon build
 
 # Execution stage
